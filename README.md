@@ -1,5 +1,5 @@
 # Access the website
-Deploy using Netify https://enchanting-empanada-edfcb7.netlify.app/
+Deploy using Netify https://disney-plus-clone-by-bosu.netlify.app/
 
 
 ## Login page 
