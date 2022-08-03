@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Details() {
+function Details({bg, title, subtitle, description}) {
   return (
     <Container>
       <Background>
-        <img src="https://images7.alphacoders.com/121/thumb-1920-1213558.jpg" />
+        <img src={bg} />
       </Background>
       <ImageTitle>
-        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/078277ed-5380-4deb-b166-997beba79634/df0bvfh-a800000f-1d9d-42e0-b1d6-bccab4cef2f3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA3ODI3N2VkLTUzODAtNGRlYi1iMTY2LTk5N2JlYmE3OTYzNFwvZGYwYnZmaC1hODAwMDAwZi0xZDlkLTQyZTAtYjFkNi1iY2NhYjRjZWYyZjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iM8oJp_L9pLRomQ0E-QIZ9CAQzUuPyVOjmGcxnFL3fE" />
+        <img src={title}/>
       </ImageTitle>
       <Controls>
         <PlayButton>
@@ -26,9 +26,9 @@ function Details() {
           <img src="/images/group-icon.png" />
         </GroupWatchButton>    
       </Controls>
-      <Subtitle>2 hr 6 min 2022 Superhero 13+</Subtitle>
+      <Subtitle>{subtitle}</Subtitle>
         <Description>
-          When the Multiverse is unlicked, Doctor Strange must enlist help form old and new allies in order to confront a surprising adversary.
+          {description}
         </Description>
     </Container>
   )
@@ -63,6 +63,7 @@ const ImageTitle = styled.div`
   min-height: 170px;
   width: 35px;
   min-width: 200px;
+  margin-top: 60px;
   img {
     width: 100%;
     height: 100%;
@@ -132,5 +133,5 @@ const Description = styled.div`
   font-size: 20px;
   margin-top: 16px;
   color: rgb(249,249,249);
-
+  max-width: 760px
 `

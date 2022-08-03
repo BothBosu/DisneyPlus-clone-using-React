@@ -1,15 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 function Header() {
   return (
     <Nav>
-        <Logo src="/images/logo.svg"/>
+        <Link to="login">
+            <Logo src="/images/logo.svg"/>
+        </Link>
         <NavMenu>
-            <a href="">
-                <img src="/images/home-icon.svg" />
-                <span>HOME</span>
-            </a>
+            <Link to='/'>
+                <a href="">
+                    <img src="/images/home-icon.svg" />
+                    <span>HOME</span>
+                </a>
+            </Link>
             <a href="">
                 <img src="/images/search-icon.svg" />
                 <span>SEARCH</span>
@@ -31,7 +36,11 @@ function Header() {
                 <span>SERIES</span>
             </a>
         </NavMenu>
-        <UserImg src="https://siamblockchain.com/wp-content/uploads/2021/12/9B5EC7A7-7A7E-4ECA-878D-DF40D91371D6.jpeg"/>
+        <User>
+            <Link to="login" >
+                <UserImg src="https://siamblockchain.com/wp-content/uploads/2021/12/9B5EC7A7-7A7E-4ECA-878D-DF40D91371D6.jpeg"/>
+            </Link>
+        </User>
     </Nav>
   )
 }
@@ -39,13 +48,14 @@ function Header() {
 export default Header
 
 const Nav = styled.nav`
-    /* position: sticky;
-    top: 0; */
+    position: sticky;
+    top: 0;
     height: 70px;
     background: #090b13;
     display: flex;
     padding: 0 36px;
     align-items: center;
+    z-index: 1;
 `
 
 const Logo = styled.img`
@@ -91,11 +101,19 @@ const NavMenu = styled.div`
         }
     }
 `
+
 const UserImg = styled.img`
-    margin-left: auto;
+    /* margin-left: auto; */
+    float: right;
+    align-items: right;
     width: 48px;
     height: 48px;
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer;
+`
+
+const User = styled.div`
+    margin-left: auto;
+
 `
