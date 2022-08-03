@@ -1,5 +1,5 @@
 # Access the website
-Deploy using Netify https://62ea97fa29789a00a7c06560--enchanting-empanada-edfcb7.netlify.app/login
+Deploy using Netify https://enchanting-empanada-edfcb7.netlify.app/
 
 
 ## Login page 
