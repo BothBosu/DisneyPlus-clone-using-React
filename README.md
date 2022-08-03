@@ -1,6 +1,6 @@
 # Access the website
-https://62ea97fa29789a00a7c06560--enchanting-empanada-edfcb7.netlify.app/login
-Deploy using Netify
+Deploy using Netify https://62ea97fa29789a00a7c06560--enchanting-empanada-edfcb7.netlify.app/login
+
 
 ## Login page 
 ![image](https://user-images.githubusercontent.com/50020179/182652556-3075bad8-4e49-42a6-a724-5bac734394ca.png)
