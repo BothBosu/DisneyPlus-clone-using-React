@@ -1,15 +1,14 @@
-You can access the web site here
+# You can access the web site here
 https://62ea97fa29789a00a7c06560--enchanting-empanada-edfcb7.netlify.app/login
+Deploy using Netify
 
-Deploy on Netify
-
-# Login page 
+## Login page 
 ![image](https://user-images.githubusercontent.com/50020179/182652556-3075bad8-4e49-42a6-a724-5bac734394ca.png)
 
-# Home page
+## Home page
 ![image](https://user-images.githubusercontent.com/50020179/182652655-081a5651-66b9-499e-b0ad-663f00bff40b.png)
 
-# Detail page
+## Detail page
 ![image](https://user-images.githubusercontent.com/50020179/182652744-be7701a2-d48d-4272-9e1b-02efacfed82c.png)
 
 
